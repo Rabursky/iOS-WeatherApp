@@ -33,6 +33,11 @@
 		C9607B311BD2D11A003681EF /* WeatherState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B2A1BD2B5CA003681EF /* WeatherState.swift */; settings = {ASSET_TAGS = (); }; };
 		C9607B331BD2D170003681EF /* FoundationDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B321BD2D170003681EF /* FoundationDeclarations.swift */; settings = {ASSET_TAGS = (); }; };
 		C9607B341BD2D18B003681EF /* FoundationDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B321BD2D170003681EF /* FoundationDeclarations.swift */; settings = {ASSET_TAGS = (); }; };
+		C9607B421BD2D523003681EF /* ModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B411BD2D523003681EF /* ModelBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		C9607B451BD2DE5F003681EF /* CityBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B441BD2DE5F003681EF /* CityBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		C9607B471BD2DE63003681EF /* ModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B411BD2D523003681EF /* ModelBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		C9607B481BD2DE63003681EF /* CityBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B441BD2DE5F003681EF /* CityBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		C9607B4D1BD2E059003681EF /* CityBuilderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +111,9 @@
 		C9607B281BD2B535003681EF /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C9607B2A1BD2B5CA003681EF /* WeatherState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherState.swift; sourceTree = "<group>"; };
 		C9607B321BD2D170003681EF /* FoundationDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationDeclarations.swift; sourceTree = "<group>"; };
+		C9607B411BD2D523003681EF /* ModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelBuilder.swift; sourceTree = "<group>"; };
+		C9607B441BD2DE5F003681EF /* CityBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityBuilder.swift; sourceTree = "<group>"; };
+		C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityBuilderTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +209,7 @@
 			children = (
 				C9607B041BD2AE5B003681EF /* DomainTests.swift */,
 				C9607B061BD2AE5B003681EF /* Info.plist */,
+				C9607B4B1BD2DE99003681EF /* Mappers */,
 			);
 			path = DomainTests;
 			sourceTree = "<group>";
@@ -216,6 +225,7 @@
 		C9607B131BD2B148003681EF /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				C9607B401BD2D4F0003681EF /* Builders */,
 			);
 			name = Infrastructure;
 			sourceTree = "<group>";
@@ -251,6 +261,23 @@
 				C9607B261BD2B459003681EF /* ForecastViewProtocol.swift */,
 			);
 			name = Forecast;
+			sourceTree = "<group>";
+		};
+		C9607B401BD2D4F0003681EF /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				C9607B411BD2D523003681EF /* ModelBuilder.swift */,
+				C9607B441BD2DE5F003681EF /* CityBuilder.swift */,
+			);
+			name = Builders;
+			sourceTree = "<group>";
+		};
+		C9607B4B1BD2DE99003681EF /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */,
+			);
+			name = Mappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,9 +474,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9607B2B1BD2B5CA003681EF /* WeatherState.swift in Sources */,
+				C9607B451BD2DE5F003681EF /* CityBuilder.swift in Sources */,
 				C9607B1C1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift in Sources */,
 				C9607B191BD2B22C003681EF /* Forecast.swift in Sources */,
 				C9607B291BD2B535003681EF /* Location.swift in Sources */,
+				C9607B421BD2D523003681EF /* ModelBuilder.swift in Sources */,
 				C9607B161BD2B1E9003681EF /* City.swift in Sources */,
 				C9607B331BD2D170003681EF /* FoundationDeclarations.swift in Sources */,
 			);
@@ -459,12 +488,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9607B481BD2DE63003681EF /* CityBuilder.swift in Sources */,
 				C9607B051BD2AE5B003681EF /* DomainTests.swift in Sources */,
 				C9607B2E1BD2D11A003681EF /* Location.swift in Sources */,
 				C9607B2F1BD2D11A003681EF /* City.swift in Sources */,
 				C9607B341BD2D18B003681EF /* FoundationDeclarations.swift in Sources */,
+				C9607B4D1BD2E059003681EF /* CityBuilderTestCase.swift in Sources */,
 				C9607B1D1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift in Sources */,
 				C9607B311BD2D11A003681EF /* WeatherState.swift in Sources */,
+				C9607B471BD2DE63003681EF /* ModelBuilder.swift in Sources */,
 				C9607B301BD2D11A003681EF /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

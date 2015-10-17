@@ -8,5 +8,10 @@
 
 struct Location {
     let lat: Double
-    let long: Double
+    let lon: Double
+}
+
+extension Location: Equatable {}
+func ==(lhs: Location, rhs: Location) -> Bool {
+    return lhs.lat == rhs.lat && lhs.lon == rhs.lon
 }
