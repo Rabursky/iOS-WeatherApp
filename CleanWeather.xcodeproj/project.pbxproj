@@ -38,6 +38,9 @@
 		C9607B471BD2DE63003681EF /* ModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B411BD2D523003681EF /* ModelBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C9607B481BD2DE63003681EF /* CityBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B441BD2DE5F003681EF /* CityBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C9607B4D1BD2E059003681EF /* CityBuilderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */; settings = {ASSET_TAGS = (); }; };
+		C9607B4F1BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		C9607B501BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		C9607B521BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B511BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +117,8 @@
 		C9607B411BD2D523003681EF /* ModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelBuilder.swift; sourceTree = "<group>"; };
 		C9607B441BD2DE5F003681EF /* CityBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityBuilder.swift; sourceTree = "<group>"; };
 		C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityBuilderTestCase.swift; sourceTree = "<group>"; };
+		C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStateBuilder.swift; sourceTree = "<group>"; };
+		C9607B511BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStateBuilderTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +214,7 @@
 			children = (
 				C9607B041BD2AE5B003681EF /* DomainTests.swift */,
 				C9607B061BD2AE5B003681EF /* Info.plist */,
-				C9607B4B1BD2DE99003681EF /* Mappers */,
+				C9607B4B1BD2DE99003681EF /* Builders */,
 			);
 			path = DomainTests;
 			sourceTree = "<group>";
@@ -268,16 +273,18 @@
 			children = (
 				C9607B411BD2D523003681EF /* ModelBuilder.swift */,
 				C9607B441BD2DE5F003681EF /* CityBuilder.swift */,
+				C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */,
 			);
 			name = Builders;
 			sourceTree = "<group>";
 		};
-		C9607B4B1BD2DE99003681EF /* Mappers */ = {
+		C9607B4B1BD2DE99003681EF /* Builders */ = {
 			isa = PBXGroup;
 			children = (
 				C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */,
+				C9607B511BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift */,
 			);
-			name = Mappers;
+			name = Builders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,6 +488,7 @@
 				C9607B421BD2D523003681EF /* ModelBuilder.swift in Sources */,
 				C9607B161BD2B1E9003681EF /* City.swift in Sources */,
 				C9607B331BD2D170003681EF /* FoundationDeclarations.swift in Sources */,
+				C9607B4F1BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +502,9 @@
 				C9607B2F1BD2D11A003681EF /* City.swift in Sources */,
 				C9607B341BD2D18B003681EF /* FoundationDeclarations.swift in Sources */,
 				C9607B4D1BD2E059003681EF /* CityBuilderTestCase.swift in Sources */,
+				C9607B501BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */,
 				C9607B1D1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift in Sources */,
+				C9607B521BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift in Sources */,
 				C9607B311BD2D11A003681EF /* WeatherState.swift in Sources */,
 				C9607B471BD2DE63003681EF /* ModelBuilder.swift in Sources */,
 				C9607B301BD2D11A003681EF /* Forecast.swift in Sources */,

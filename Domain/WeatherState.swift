@@ -13,9 +13,24 @@ struct WeatherState {
     let name: String
     let description: String
     let iconName: String
-    let current: Temperature
-    let min: Temperature
-    let max: Temperature
+    let currentTemperature: Temperature
+    let minTemperature: Temperature
+    let maxTemperature: Temperature
     let pressure: Float
     let humidity: Float
 }
+
+extension WeatherState: Equatable {}
+func ==(lhs: WeatherState, rhs: WeatherState) -> Bool {
+    return
+        lhs.date.isEqualToDate(rhs.date) &&
+        lhs.name == rhs.name &&
+        lhs.description == rhs.description &&
+        lhs.iconName == rhs.iconName &&
+        lhs.currentTemperature == rhs.currentTemperature &&
+        lhs.minTemperature == rhs.minTemperature &&
+        lhs.maxTemperature == rhs.maxTemperature &&
+        lhs.pressure == rhs.pressure &&
+        lhs.humidity == rhs.humidity
+}
+
