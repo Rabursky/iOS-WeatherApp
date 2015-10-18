@@ -9,11 +9,6 @@
 import CoreLocation
 import SwiftyDispatch
 
-public enum LocationError : ErrorType {
-    case AccessDenied
-    case CouldNotDetermine
-}
-
 class LocationService : NSObject, CLLocationManagerDelegate, LocationServiceProtocol {
     static let sharedService = LocationService()
     

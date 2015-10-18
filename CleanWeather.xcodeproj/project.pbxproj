@@ -67,6 +67,14 @@
 		C9607B501BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C9A4DE2E1BD40959009712E6 /* LocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE2D1BD40959009712E6 /* LocationServiceProtocol.swift */; settings = {ASSET_TAGS = (); }; };
 		C9A4DE2F1BD40959009712E6 /* LocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE2D1BD40959009712E6 /* LocationServiceProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		C9A4DE311BD40B09009712E6 /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE301BD40B09009712E6 /* InteractorProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		C9A4DE321BD40B09009712E6 /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE301BD40B09009712E6 /* InteractorProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		C9A4DE351BD40C01009712E6 /* InteractorInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE341BD40C01009712E6 /* InteractorInvoker.swift */; settings = {ASSET_TAGS = (); }; };
+		C9A4DE361BD40C01009712E6 /* InteractorInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE341BD40C01009712E6 /* InteractorInvoker.swift */; settings = {ASSET_TAGS = (); }; };
+		C9A4DE381BD40C46009712E6 /* InteractorInvokerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE371BD40C46009712E6 /* InteractorInvokerProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		C9A4DE391BD40C46009712E6 /* InteractorInvokerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE371BD40C46009712E6 /* InteractorInvokerProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		C9A4DE3A1BD40EFB009712E6 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9607AF41BD2AE5B003681EF /* Domain.framework */; };
+		C9A4DE3C1BD41342009712E6 /* InteractorInvokerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE3B1BD41342009712E6 /* InteractorInvokerTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +194,10 @@
 		C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStateBuilder.swift; sourceTree = "<group>"; };
 		C9607B511BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStateBuilderTestCase.swift; sourceTree = "<group>"; };
 		C9A4DE2D1BD40959009712E6 /* LocationServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceProtocol.swift; sourceTree = "<group>"; };
+		C9A4DE301BD40B09009712E6 /* InteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorProtocol.swift; sourceTree = "<group>"; };
+		C9A4DE341BD40C01009712E6 /* InteractorInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInvoker.swift; sourceTree = "<group>"; };
+		C9A4DE371BD40C46009712E6 /* InteractorInvokerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInvokerProtocol.swift; sourceTree = "<group>"; };
+		C9A4DE3B1BD41342009712E6 /* InteractorInvokerTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInvokerTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A4DE3A1BD40EFB009712E6 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				C9384F181BD3F8B900E1E3EB /* PresenterFactory.swift */,
+				C9A4DE331BD40B5E009712E6 /* Invoker */,
 				C9384F111BD3F74800E1E3EB /* Forecast */,
 				C9384EF61BD3F71500E1E3EB /* Presenters.h */,
 				C9384EF81BD3F71500E1E3EB /* Info.plist */,
@@ -266,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				C9384F061BD3F71500E1E3EB /* Info.plist */,
+				C9A4DE3B1BD41342009712E6 /* InteractorInvokerTestCase.swift */,
 			);
 			path = PresentersTests;
 			sourceTree = "<group>";
@@ -364,6 +379,7 @@
 		C9607B121BD2B13D003681EF /* Use Cases */ = {
 			isa = PBXGroup;
 			children = (
+				C9A4DE301BD40B09009712E6 /* InteractorProtocol.swift */,
 				C9607B1B1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift */,
 				C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */,
 			);
@@ -428,6 +444,15 @@
 				C95B5DE11BD3025700654458 /* ForecastBuilderTestCase.swift */,
 			);
 			name = Builders;
+			sourceTree = "<group>";
+		};
+		C9A4DE331BD40B5E009712E6 /* Invoker */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4DE371BD40C46009712E6 /* InteractorInvokerProtocol.swift */,
+				C9A4DE341BD40C01009712E6 /* InteractorInvoker.swift */,
+			);
+			name = Invoker;
 			sourceTree = "<group>";
 		};
 		E0FFDFDA5E3FC9762CB698B3 /* Frameworks */ = {
@@ -737,7 +762,9 @@
 				C9384F151BD3F7E600E1E3EB /* ForecastViewProtocol.swift in Sources */,
 				C9384F191BD3F8B900E1E3EB /* PresenterFactory.swift in Sources */,
 				C9384F121BD3F75200E1E3EB /* ForecastPresenter.swift in Sources */,
+				C9A4DE381BD40C46009712E6 /* InteractorInvokerProtocol.swift in Sources */,
 				C9384F141BD3F7E600E1E3EB /* ForecastPresenterProtocol.swift in Sources */,
+				C9A4DE351BD40C01009712E6 /* InteractorInvoker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,7 +775,10 @@
 				C9384F161BD3F7E700E1E3EB /* ForecastPresenterProtocol.swift in Sources */,
 				C9384F1A1BD3F8B900E1E3EB /* PresenterFactory.swift in Sources */,
 				C9384F171BD3F7E700E1E3EB /* ForecastViewProtocol.swift in Sources */,
+				C9A4DE3C1BD41342009712E6 /* InteractorInvokerTestCase.swift in Sources */,
+				C9A4DE391BD40C46009712E6 /* InteractorInvokerProtocol.swift in Sources */,
 				C9384F131BD3F75300E1E3EB /* ForecastPresenter.swift in Sources */,
+				C9A4DE361BD40C01009712E6 /* InteractorInvoker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +806,7 @@
 				C9607B2B1BD2B5CA003681EF /* WeatherState.swift in Sources */,
 				C9607B451BD2DE5F003681EF /* CityBuilder.swift in Sources */,
 				C9607B1C1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift in Sources */,
+				C9A4DE311BD40B09009712E6 /* InteractorProtocol.swift in Sources */,
 				C9A4DE2E1BD40959009712E6 /* LocationServiceProtocol.swift in Sources */,
 				C9607B191BD2B22C003681EF /* Forecast.swift in Sources */,
 				C95B5DDF1BD3022B00654458 /* ForecastBuilder.swift in Sources */,
@@ -811,6 +842,7 @@
 				C95B5DE01BD3022B00654458 /* ForecastBuilder.swift in Sources */,
 				C9607B311BD2D11A003681EF /* WeatherState.swift in Sources */,
 				C9607B471BD2DE63003681EF /* ModelBuilder.swift in Sources */,
+				C9A4DE321BD40B09009712E6 /* InteractorProtocol.swift in Sources */,
 				C9384F1E1BD3FB7B00E1E3EB /* LocationService.swift in Sources */,
 				C9A4DE2F1BD40959009712E6 /* LocationServiceProtocol.swift in Sources */,
 				C9607B301BD2D11A003681EF /* Forecast.swift in Sources */,

@@ -6,6 +6,11 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
+public enum LocationError : ErrorType {
+    case AccessDenied
+    case CouldNotDetermine
+}
+
 protocol LocationServiceProtocol {
     func getCurrentLocation() throws -> Location
 }

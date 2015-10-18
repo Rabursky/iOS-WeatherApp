@@ -10,4 +10,7 @@ public class InteractorFactory {
     public class func getForecastForLocationInteractor() -> GetForecastForLocationInteractor {
         return GetForecastForLocationInteractor()
     }
+    public class func getCurrentLocationInteractor() -> GetCurrentLocationInteractor {
+        return GetCurrentLocationInteractor()
+    }
 }
