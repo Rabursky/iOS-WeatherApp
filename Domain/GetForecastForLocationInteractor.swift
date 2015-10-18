@@ -6,14 +6,19 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-public class GetForecastForLocationInteractor {
-    public var location: Location? = nil
-    init() {
-        
+public class GetForecastForLocationInteractor : InteractorProtocol {
+    public var input: Location?
+    public var output: Forecast?
+    
+    let networkingService: ForecastNetworkingProtocol
+    let builder: ModelBuilder<Forecast>
+    init(networkingService: ForecastNetworkingProtocol, builder: ModelBuilder<Forecast>) {
+        self.networkingService = networkingService
+        self.builder = builder
     }
-    public func execute() throws -> Forecast {
-        let json = try NetworkingService.sharedService.getForecastJSONWithLocation(Location(lat: 1, lon: 1))
-        let builder = ForecastBuilder(cityBuilder: CityBuilder(), weatherStateBuilder: WeatherStateBuilder())
-        return builder.buildInstanceWithJSON(json)!
+    
+    public func execute() throws -> () {
+        let json = try networkingService.getForecastJSONWithLocation(Location(lat: 1, lon: 1))
+        output =  builder.buildInstanceWithJSON(json)!
     }
 }

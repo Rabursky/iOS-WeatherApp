@@ -6,6 +6,15 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-public class GetCurrentLocationInteractor {
+public class GetCurrentLocationInteractor : InteractorProtocol {
+    public var output: Location?
     
+    let locationService: LocationServiceProtocol
+    init(locationService: LocationServiceProtocol) {
+        self.locationService = locationService
+    }
+    
+    public func execute() throws {
+        output = try locationService.getCurrentLocation()
+    }
 }

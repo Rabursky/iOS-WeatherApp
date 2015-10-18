@@ -8,9 +8,10 @@
 
 public class InteractorFactory {
     public class func getForecastForLocationInteractor() -> GetForecastForLocationInteractor {
-        return GetForecastForLocationInteractor()
+        let builder = ForecastBuilder(cityBuilder: CityBuilder(), weatherStateBuilder: WeatherStateBuilder())
+        return GetForecastForLocationInteractor(networkingService: NetworkingService.sharedService, builder: builder)
     }
     public class func getCurrentLocationInteractor() -> GetCurrentLocationInteractor {
-        return GetCurrentLocationInteractor()
+        return GetCurrentLocationInteractor(locationService: LocationService.sharedService)
     }
 }
