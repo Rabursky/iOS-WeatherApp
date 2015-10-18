@@ -50,7 +50,8 @@ class ForecastViewController: UIViewController, ForecastViewProtocol {
         updateAsLoading(false)
         cityLabel?.text = forecast.city.name
         if let state: WeatherState = forecast.states.first {
-            temperatureLabel?.text = String(state.currentTemperature)
+            let temperature = Int(round(state.currentTemperature))
+            temperatureLabel?.text = "\(temperature)°"
         } else {
             temperatureLabel?.text = "--"
         }

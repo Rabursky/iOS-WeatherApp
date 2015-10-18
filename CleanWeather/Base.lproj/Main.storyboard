@@ -17,28 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CleanWeather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4x-Bg-ZpL">
-                                <rect key="frame" x="216" y="52" width="169" height="35"/>
+                                <rect key="frame" x="216" y="56" width="169" height="35"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcc-mb-zib">
-                                <rect key="frame" x="256" y="107" width="89" height="96"/>
+                                <rect key="frame" x="256" y="113" width="89" height="96"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="80"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-s8-CI1">
-                                <rect key="frame" x="260" y="237" width="80" height="29"/>
+                                <rect key="frame" x="260" y="241" width="80" height="29"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="0.43957435344827589" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1yO-ow-ZtT">
-                                <rect key="frame" x="290" y="151" width="20" height="20"/>
+                                <rect key="frame" x="290" y="155" width="20" height="20"/>
                                 <animations/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoi-hr-xXN">
@@ -58,11 +58,11 @@
                             <constraint firstItem="1yO-ow-ZtT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRg-38-4VF"/>
                             <constraint firstItem="Zcc-mb-zib" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UJ0-AO-2e3"/>
                             <constraint firstItem="2gF-s8-CI1" firstAttribute="top" secondItem="Z4x-Bg-ZpL" secondAttribute="bottom" constant="150" id="dFt-4S-GJU"/>
-                            <constraint firstItem="Zcc-mb-zib" firstAttribute="top" secondItem="Z4x-Bg-ZpL" secondAttribute="bottom" constant="20" id="msc-Og-K8q"/>
+                            <constraint firstItem="Zcc-mb-zib" firstAttribute="top" secondItem="Z4x-Bg-ZpL" secondAttribute="bottom" constant="22" id="msc-Og-K8q"/>
                             <constraint firstItem="2gF-s8-CI1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sU9-Kh-EDv"/>
                             <constraint firstItem="1yO-ow-ZtT" firstAttribute="top" secondItem="Z4x-Bg-ZpL" secondAttribute="bottom" constant="64" id="x5P-hX-gjL"/>
                             <constraint firstItem="yoi-hr-xXN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yIx-mu-boU"/>
-                            <constraint firstItem="Z4x-Bg-ZpL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="zp9-Eh-UYV"/>
+                            <constraint firstItem="Z4x-Bg-ZpL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="zp9-Eh-UYV"/>
                         </constraints>
                     </view>
                     <connections>
