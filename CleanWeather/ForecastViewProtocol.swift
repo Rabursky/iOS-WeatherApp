@@ -6,6 +6,6 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-protocol ForecastViewProtocol {
+public protocol ForecastViewProtocol {
 
 }

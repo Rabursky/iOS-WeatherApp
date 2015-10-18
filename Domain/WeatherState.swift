@@ -8,7 +8,7 @@
 
 typealias Temperature = Float
 
-struct WeatherState {
+public struct WeatherState {
     let date: Date
     let name: String
     let description: String
@@ -21,7 +21,7 @@ struct WeatherState {
 }
 
 extension WeatherState: Equatable {}
-func ==(lhs: WeatherState, rhs: WeatherState) -> Bool {
+public func ==(lhs: WeatherState, rhs: WeatherState) -> Bool {
     return
         lhs.date.isEqualToDate(rhs.date) &&
         lhs.name == rhs.name &&

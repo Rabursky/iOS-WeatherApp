@@ -6,7 +6,7 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-class Forecast {
+public class Forecast {
     let city: City
     let states: [WeatherState]
     init(city: City, states: [WeatherState]) {
@@ -16,7 +16,7 @@ class Forecast {
 }
 
 extension Forecast : Equatable {}
-func ==(lhs: Forecast, rhs: Forecast) -> Bool {
+public func ==(lhs: Forecast, rhs: Forecast) -> Bool {
     return
         lhs.city == rhs.city &&
         lhs.states == rhs.states

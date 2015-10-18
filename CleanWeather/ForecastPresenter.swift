@@ -6,4 +6,8 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-import Foundation
+class ForecastPresenter : ForecastPresenterProtocol {
+    init() {
+        
+    }
+}

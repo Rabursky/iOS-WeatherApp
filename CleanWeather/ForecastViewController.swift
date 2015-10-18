@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Presenters
 
 class ForecastViewController: UIViewController {
+    let presenter: ForecastPresenterProtocol = PresenterFactory.forecastPresenter()
 
+    override func viewDidLoad() {
+
+    }
     
 }

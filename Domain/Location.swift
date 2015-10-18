@@ -6,12 +6,12 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-struct Location {
+public struct Location {
     let lat: Double
     let lon: Double
 }
 
 extension Location: Equatable {}
-func ==(lhs: Location, rhs: Location) -> Bool {
+public func ==(lhs: Location, rhs: Location) -> Bool {
     return lhs.lat == rhs.lat && lhs.lon == rhs.lon
 }

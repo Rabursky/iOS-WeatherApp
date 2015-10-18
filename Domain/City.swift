@@ -6,13 +6,13 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-struct City {
+public struct City {
     let id: String
     let location: Location
     let name: String?
 }
 
 extension City: Equatable {}
-func ==(lhs: City, rhs: City) -> Bool {
+public func ==(lhs: City, rhs: City) -> Bool {
     return lhs.id == rhs.id && lhs.location == rhs.location && lhs.name == rhs.name
 }
