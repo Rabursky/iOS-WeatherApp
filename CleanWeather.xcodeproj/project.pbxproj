@@ -28,6 +28,8 @@
 		C9384F1E1BD3FB7B00E1E3EB /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F1C1BD3FB7B00E1E3EB /* LocationService.swift */; settings = {ASSET_TAGS = (); }; };
 		C9384F201BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */; settings = {ASSET_TAGS = (); }; };
 		C9384F211BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */; settings = {ASSET_TAGS = (); }; };
+		C947D1DA1BD436DD007C8CB5 /* SwiftyDispatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C947D1D91BD436DD007C8CB5 /* SwiftyDispatch.framework */; };
+		C947D1DC1BD436E7007C8CB5 /* SwiftyDispatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C947D1DB1BD436E7007C8CB5 /* SwiftyDispatch.framework */; };
 		C95B5DDF1BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DE01BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DE41BD31E5A00654458 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */; };
@@ -158,6 +160,8 @@
 		C9384F181BD3F8B900E1E3EB /* PresenterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterFactory.swift; sourceTree = "<group>"; };
 		C9384F1C1BD3FB7B00E1E3EB /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationInteractor.swift; sourceTree = "<group>"; };
+		C947D1D91BD436DD007C8CB5 /* SwiftyDispatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDispatch.framework; path = "Pods/../build/Debug-iphoneos/SwiftyDispatch.framework"; sourceTree = "<group>"; };
+		C947D1DB1BD436E7007C8CB5 /* SwiftyDispatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDispatch.framework; path = "Pods/../build/Debug-iphoneos/SwiftyDispatch.framework"; sourceTree = "<group>"; };
 		C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilder.swift; sourceTree = "<group>"; };
 		C95B5DE11BD3025700654458 /* ForecastBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilderTestCase.swift; sourceTree = "<group>"; };
 		C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C947D1DC1BD436E7007C8CB5 /* SwiftyDispatch.framework in Frameworks */,
 				C9A4DE3A1BD40EFB009712E6 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C947D1DA1BD436DD007C8CB5 /* SwiftyDispatch.framework in Frameworks */,
 				C9384EEA1BD326B100E1E3EB /* Just.framework in Frameworks */,
 				C95B5DE61BD31E7700654458 /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -458,6 +464,8 @@
 		E0FFDFDA5E3FC9762CB698B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C947D1DB1BD436E7007C8CB5 /* SwiftyDispatch.framework */,
+				C947D1D91BD436DD007C8CB5 /* SwiftyDispatch.framework */,
 				C9384EE91BD326B100E1E3EB /* Just.framework */,
 				C95B5DE51BD31E7700654458 /* SwiftyJSON.framework */,
 				C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */,
@@ -917,6 +925,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Presenters/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -936,6 +948,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Presenters/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
