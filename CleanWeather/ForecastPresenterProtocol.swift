@@ -7,5 +7,6 @@
 //
 
 public protocol ForecastPresenterProtocol {
-
+    func setView(view: ForecastViewProtocol) -> ()
+    func updateForecast() -> ()
 }

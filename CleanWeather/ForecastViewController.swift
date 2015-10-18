@@ -8,12 +8,27 @@
 
 import UIKit
 import Presenters
+import Domain
 
-class ForecastViewController: UIViewController {
+class ForecastViewController: UIViewController, ForecastViewProtocol {
     let presenter: ForecastPresenterProtocol = PresenterFactory.forecastPresenter()
 
-    override func viewDidLoad() {
-
+    override func viewDidAppear(animated: Bool) {
+        self.presenter.setView(self)
+        self.presenter.updateForecast()
     }
     
+    // MARK: ForecastViewProtocol
+    
+    func displayError(error: ErrorType) {
+        print(error)
+    }
+    
+    func displayForecast(forecast: Forecast) {
+        
+    }
+    
+    func displayLoading() {
+        
+    }
 }

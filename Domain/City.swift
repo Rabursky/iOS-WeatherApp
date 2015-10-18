@@ -7,9 +7,9 @@
 //
 
 public struct City {
-    let id: String
-    let location: Location
-    let name: String?
+    public let id: String
+    public let location: Location
+    public let name: String?
 }
 
 extension City: Equatable {}

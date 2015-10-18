@@ -6,6 +6,10 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-public protocol ForecastViewProtocol {
+import Domain
 
+public protocol ForecastViewProtocol {
+    func displayError(error: ErrorType)
+    func displayForecast(forecast: Forecast)
+    func displayLoading()
 }

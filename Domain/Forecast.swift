@@ -7,8 +7,8 @@
 //
 
 public class Forecast {
-    let city: City
-    let states: [WeatherState]
+    public let city: City
+    public let states: [WeatherState]
     init(city: City, states: [WeatherState]) {
         self.city = city
         self.states = states
