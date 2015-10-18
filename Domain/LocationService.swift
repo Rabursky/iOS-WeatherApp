@@ -14,11 +14,13 @@ public enum LocationError : ErrorType {
     case CouldNotDetermine
 }
 
-class LocationService : NSObject, CLLocationManagerDelegate {
-    let locationManager = CLLocationManager()
-    let authorizationSemaphore = Semaphore(0)
-    let locationDeterminedSemaphore = Semaphore(0)
-    var currentLocation: Location?
+class LocationService : NSObject, CLLocationManagerDelegate, LocationServiceProtocol {
+    static let sharedService = LocationService()
+    
+    private let locationManager = CLLocationManager()
+    private let authorizationSemaphore = Semaphore(0)
+    private let locationDeterminedSemaphore = Semaphore(0)
+    private var currentLocation: Location?
     
     func getCurrentLocation() throws -> Location {
         locationManager.delegate = self

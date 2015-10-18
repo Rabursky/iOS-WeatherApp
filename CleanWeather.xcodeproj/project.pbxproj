@@ -65,6 +65,8 @@
 		C9607B4D1BD2E059003681EF /* CityBuilderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 		C9607B4F1BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C9607B501BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		C9A4DE2E1BD40959009712E6 /* LocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE2D1BD40959009712E6 /* LocationServiceProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		C9A4DE2F1BD40959009712E6 /* LocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4DE2D1BD40959009712E6 /* LocationServiceProtocol.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +185,7 @@
 		C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityBuilderTestCase.swift; sourceTree = "<group>"; };
 		C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStateBuilder.swift; sourceTree = "<group>"; };
 		C9607B511BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStateBuilderTestCase.swift; sourceTree = "<group>"; };
+		C9A4DE2D1BD40959009712E6 /* LocationServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +285,7 @@
 			children = (
 				C95B5DEC1BD3242100654458 /* ForecastNetworkingProtocol.swift */,
 				C95B5DEA1BD323F500654458 /* NetworkingService.swift */,
+				C9A4DE2D1BD40959009712E6 /* LocationServiceProtocol.swift */,
 				C9384F1C1BD3FB7B00E1E3EB /* LocationService.swift */,
 			);
 			name = Services;
@@ -772,6 +776,7 @@
 				C9607B2B1BD2B5CA003681EF /* WeatherState.swift in Sources */,
 				C9607B451BD2DE5F003681EF /* CityBuilder.swift in Sources */,
 				C9607B1C1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift in Sources */,
+				C9A4DE2E1BD40959009712E6 /* LocationServiceProtocol.swift in Sources */,
 				C9607B191BD2B22C003681EF /* Forecast.swift in Sources */,
 				C95B5DDF1BD3022B00654458 /* ForecastBuilder.swift in Sources */,
 				C9384EEE1BD32CDC00E1E3EB /* InteractorsFactory.swift in Sources */,
@@ -807,6 +812,7 @@
 				C9607B311BD2D11A003681EF /* WeatherState.swift in Sources */,
 				C9607B471BD2DE63003681EF /* ModelBuilder.swift in Sources */,
 				C9384F1E1BD3FB7B00E1E3EB /* LocationService.swift in Sources */,
+				C9A4DE2F1BD40959009712E6 /* LocationServiceProtocol.swift in Sources */,
 				C9607B301BD2D11A003681EF /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1155,6 +1161,7 @@
 				C9384F0D1BD3F71500E1E3EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9384F0E1BD3F71500E1E3EB /* Build configuration list for PBXNativeTarget "PresentersTests" */ = {
 			isa = XCConfigurationList;
@@ -1163,6 +1170,7 @@
 				C9384F101BD3F71500E1E3EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9607ABC1BD2ADBA003681EF /* Build configuration list for PBXProject "CleanWeather" */ = {
 			isa = XCConfigurationList;
