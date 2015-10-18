@@ -7,10 +7,11 @@
 //
 
 import XCTest
+import SwiftyJSON
 
 class WeatherStateBuilderTestCase: XCTestCase {
     var builder: ModelBuilder<WeatherState>!
-    let correctDictionary: [String:Any] = [
+    let correctJSON = JSON([
         "dt": 1445104800,
         "main":[
             "temp": 9.74,
@@ -41,7 +42,7 @@ class WeatherStateBuilderTestCase: XCTestCase {
             "pod": "d"
         ],
         "dt_txt": "2015-10-17 18:00:00"
-    ]
+    ])
     
     override func setUp() {
         super.setUp()
@@ -49,11 +50,11 @@ class WeatherStateBuilderTestCase: XCTestCase {
     }
     
     func testReturnsNilIfRequiredKeysMissing() {
-        XCTAssertNil(self.builder.buildInstanceWithDictionary(["coord":"123"]))
+        XCTAssertNil(self.builder.buildInstanceWithJSON(JSON(["coord":"123"])))
     }
     
     func testReturnsInstanceWhenRequiredKeysAvailable() {
-        XCTAssertNotNil(self.builder.buildInstanceWithDictionary(correctDictionary))
+        XCTAssertNotNil(self.builder.buildInstanceWithJSON(correctJSON))
     }
     
     func testMappsKeysCorrectly() {
@@ -71,7 +72,7 @@ class WeatherStateBuilderTestCase: XCTestCase {
             humidity: 47
         )
         
-        let state = self.builder.buildInstanceWithDictionary(correctDictionary)
+        let state = self.builder.buildInstanceWithJSON(correctJSON)
         if let builtState = state {
             XCTAssertEqual(builtState, desiredWeatherState)
         } else {

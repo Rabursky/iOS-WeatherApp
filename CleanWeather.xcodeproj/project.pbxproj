@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A45EC1E950B72688341CA4D1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66051C9D08C1F0C89881E7F5 /* Pods.framework */; };
+		C95B5DDF1BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		C95B5DE01BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		C95B5DE41BD31E5A00654458 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */; };
+		C95B5DE61BD31E7700654458 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B5DE51BD31E7700654458 /* SwiftyJSON.framework */; };
+		C95B5DE71BD3224E00654458 /* WeatherStateBuilderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B511BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift */; settings = {ASSET_TAGS = (); }; };
+		C95B5DE81BD3229500654458 /* ForecastBuilderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DE11BD3025700654458 /* ForecastBuilderTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 		C9607AC51BD2ADBA003681EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607AC41BD2ADBA003681EF /* AppDelegate.swift */; };
 		C9607ACA1BD2ADBA003681EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9607AC81BD2ADBA003681EF /* Main.storyboard */; };
 		C9607ACC1BD2ADBA003681EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9607ACB1BD2ADBA003681EF /* Assets.xcassets */; };
@@ -40,7 +47,6 @@
 		C9607B4D1BD2E059003681EF /* CityBuilderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 		C9607B4F1BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C9607B501BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */; settings = {ASSET_TAGS = (); }; };
-		C9607B521BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B511BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		199B16271688640BABE847AD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		382D1C4D525C6CFA02DCCC82 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		66051C9D08C1F0C89881E7F5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilder.swift; sourceTree = "<group>"; };
+		C95B5DE11BD3025700654458 /* ForecastBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilderTestCase.swift; sourceTree = "<group>"; };
+		C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		C95B5DE51BD31E7700654458 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		C9607AC11BD2ADBA003681EF /* CleanWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9607AC41BD2ADBA003681EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9607AC91BD2ADBA003681EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,7 +139,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95B5DE41BD31E5A00654458 /* SwiftyJSON.framework in Frameworks */,
 				C9607B091BD2AE5B003681EF /* Domain.framework in Frameworks */,
+				A45EC1E950B72688341CA4D1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95B5DE61BD31E7700654458 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +171,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ABE2698C254E8C4BA7C1BF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				382D1C4D525C6CFA02DCCC82 /* Pods.debug.xcconfig */,
+				199B16271688640BABE847AD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C9607AB81BD2ADBA003681EF = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +188,8 @@
 				C9607AF51BD2AE5B003681EF /* Domain */,
 				C9607B031BD2AE5B003681EF /* DomainTests */,
 				C9607AC21BD2ADBA003681EF /* Products */,
+				1ABE2698C254E8C4BA7C1BF2 /* Pods */,
+				E0FFDFDA5E3FC9762CB698B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -274,6 +301,7 @@
 				C9607B411BD2D523003681EF /* ModelBuilder.swift */,
 				C9607B441BD2DE5F003681EF /* CityBuilder.swift */,
 				C9607B4E1BD2EC6E003681EF /* WeatherStateBuilder.swift */,
+				C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */,
 			);
 			name = Builders;
 			sourceTree = "<group>";
@@ -283,8 +311,19 @@
 			children = (
 				C9607B4C1BD2E059003681EF /* CityBuilderTestCase.swift */,
 				C9607B511BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift */,
+				C95B5DE11BD3025700654458 /* ForecastBuilderTestCase.swift */,
 			);
 			name = Builders;
+			sourceTree = "<group>";
+		};
+		E0FFDFDA5E3FC9762CB698B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C95B5DE51BD31E7700654458 /* SwiftyJSON.framework */,
+				C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */,
+				66051C9D08C1F0C89881E7F5 /* Pods.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,10 +344,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9607ADE1BD2ADBA003681EF /* Build configuration list for PBXNativeTarget "CleanWeather" */;
 			buildPhases = (
+				54ECF722ACEDFF398F30C0F0 /* Check Pods Manifest.lock */,
 				C9607ABD1BD2ADBA003681EF /* Sources */,
 				C9607ABE1BD2ADBA003681EF /* Frameworks */,
 				C9607ABF1BD2ADBA003681EF /* Resources */,
 				C9607B0E1BD2AE5B003681EF /* Embed Frameworks */,
+				17EA88B7B1FC8DA127254430 /* Embed Pods Frameworks */,
+				C40CA8E7B3155E27E768C527 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -455,6 +497,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17EA88B7B1FC8DA127254430 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54ECF722ACEDFF398F30C0F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C40CA8E7B3155E27E768C527 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9607ABD1BD2ADBA003681EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -484,6 +574,7 @@
 				C9607B451BD2DE5F003681EF /* CityBuilder.swift in Sources */,
 				C9607B1C1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift in Sources */,
 				C9607B191BD2B22C003681EF /* Forecast.swift in Sources */,
+				C95B5DDF1BD3022B00654458 /* ForecastBuilder.swift in Sources */,
 				C9607B291BD2B535003681EF /* Location.swift in Sources */,
 				C9607B421BD2D523003681EF /* ModelBuilder.swift in Sources */,
 				C9607B161BD2B1E9003681EF /* City.swift in Sources */,
@@ -502,9 +593,11 @@
 				C9607B2F1BD2D11A003681EF /* City.swift in Sources */,
 				C9607B341BD2D18B003681EF /* FoundationDeclarations.swift in Sources */,
 				C9607B4D1BD2E059003681EF /* CityBuilderTestCase.swift in Sources */,
+				C95B5DE71BD3224E00654458 /* WeatherStateBuilderTestCase.swift in Sources */,
 				C9607B501BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */,
+				C95B5DE81BD3229500654458 /* ForecastBuilderTestCase.swift in Sources */,
 				C9607B1D1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift in Sources */,
-				C9607B521BD2ECA6003681EF /* WeatherStateBuilderTestCase.swift in Sources */,
+				C95B5DE01BD3022B00654458 /* ForecastBuilder.swift in Sources */,
 				C9607B311BD2D11A003681EF /* WeatherState.swift in Sources */,
 				C9607B471BD2DE63003681EF /* ModelBuilder.swift in Sources */,
 				C9607B301BD2D11A003681EF /* Forecast.swift in Sources */,
@@ -641,9 +734,14 @@
 		};
 		C9607ADF1BD2ADBA003681EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 382D1C4D525C6CFA02DCCC82 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = CleanWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rzeczy.CleanWeather;
@@ -653,9 +751,14 @@
 		};
 		C9607AE01BD2ADBA003681EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 199B16271688640BABE847AD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = CleanWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rzeczy.CleanWeather;
@@ -696,6 +799,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -719,6 +826,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -789,6 +900,7 @@
 				C9607B0D1BD2AE5B003681EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9607B0F1BD2AE5B003681EF /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
 			isa = XCConfigurationList;
@@ -797,6 +909,7 @@
 				C9607B111BD2AE5B003681EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

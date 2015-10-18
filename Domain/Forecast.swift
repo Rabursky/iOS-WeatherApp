@@ -14,3 +14,10 @@ class Forecast {
         self.states = states
     }
 }
+
+extension Forecast : Equatable {}
+func ==(lhs: Forecast, rhs: Forecast) -> Bool {
+    return
+        lhs.city == rhs.city &&
+        lhs.states == rhs.states
+}

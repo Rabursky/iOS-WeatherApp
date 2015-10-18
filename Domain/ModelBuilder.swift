@@ -6,8 +6,10 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
+import SwiftyJSON
+
 class ModelBuilder<T> {
-    func buildInstanceWithDictionary(dictionary: [String:Any]) -> T? {
+    func buildInstanceWithJSON(json: JSON) -> T? {
         return nil
     }
 }

@@ -6,23 +6,22 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-import Foundation
+import SwiftyJSON
 
 class WeatherStateBuilder: ModelBuilder<WeatherState> {
-    override func buildInstanceWithDictionary(dictionary: [String : Any]) -> WeatherState? {
+    override func buildInstanceWithJSON(json: JSON) -> WeatherState? {
         guard
-            let dateString = dictionary["dt_txt"],
-            let main = dictionary["main"] as? [String:Double],
-                let temp = main["temp"],
-                let min = main["temp_min"],
-                let max = main["temp_max"],
-                let pressure = main["pressure"],
-                let humidity = main["humidity"],
-            let weather = dictionary["weather"] as! [[String:NSObject]]?,
+            let dateString = json["dt_txt"].string,
+            let temp = json["main"]["temp"].float,
+            let min = json["main"]["temp_min"].float,
+            let max = json["main"]["temp_max"].float,
+            let pressure = json["main"]["pressure"].float,
+            let humidity = json["main"]["humidity"].float,
+            let weather = json["weather"].array,
                 let firstWeather = weather.first,
-                    let name = firstWeather["main"],
-                    let description = firstWeather["description"],
-                    let icon = firstWeather["icon"]
+                    let name = firstWeather["main"].string,
+                    let description = firstWeather["description"].string,
+                    let icon = firstWeather["icon"].string
         else {
             return nil
         }

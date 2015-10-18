@@ -6,18 +6,19 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
+import SwiftyJSON
+
 class CityBuilder: ModelBuilder<City> {
-    override func buildInstanceWithDictionary(dictionary: [String : Any]) -> City? {
+    override func buildInstanceWithJSON(json: JSON) -> City? {
         guard
-            let id = dictionary["id"],
-            let coord = dictionary["coord"] as! [String:Double]?,
-            let lat = coord["lat"],
-            let lon = coord["lon"] else {
+            let id = json["id"].int,
+            let lat = json["coord"]["lat"].double,
+            let lon = json["coord"]["lon"].double else {
             return nil
         }
         
         let location = Location(lat: lat, lon: lon)
-        let name = dictionary["name"] as! String?
+        let name = json["name"].string
         return City(id: String(id), location: location, name: name)
     }
 }
