@@ -24,6 +24,10 @@
 		C9384F191BD3F8B900E1E3EB /* PresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F181BD3F8B900E1E3EB /* PresenterFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		C9384F1A1BD3F8B900E1E3EB /* PresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F181BD3F8B900E1E3EB /* PresenterFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		C9384F1B1BD3FA9500E1E3EB /* ForecastNetworkingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DEC1BD3242100654458 /* ForecastNetworkingProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		C9384F1D1BD3FB7B00E1E3EB /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F1C1BD3FB7B00E1E3EB /* LocationService.swift */; settings = {ASSET_TAGS = (); }; };
+		C9384F1E1BD3FB7B00E1E3EB /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F1C1BD3FB7B00E1E3EB /* LocationService.swift */; settings = {ASSET_TAGS = (); }; };
+		C9384F201BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */; settings = {ASSET_TAGS = (); }; };
+		C9384F211BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DDF1BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DE01BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DE41BD31E5A00654458 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */; };
@@ -142,6 +146,8 @@
 		C9384EFD1BD3F71500E1E3EB /* PresentersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9384F061BD3F71500E1E3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9384F181BD3F8B900E1E3EB /* PresenterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterFactory.swift; sourceTree = "<group>"; };
+		C9384F1C1BD3FB7B00E1E3EB /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationInteractor.swift; sourceTree = "<group>"; };
 		C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilder.swift; sourceTree = "<group>"; };
 		C95B5DE11BD3025700654458 /* ForecastBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilderTestCase.swift; sourceTree = "<group>"; };
 		C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
@@ -274,8 +280,9 @@
 		C95B5DE91BD323D100654458 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C95B5DEA1BD323F500654458 /* NetworkingService.swift */,
 				C95B5DEC1BD3242100654458 /* ForecastNetworkingProtocol.swift */,
+				C95B5DEA1BD323F500654458 /* NetworkingService.swift */,
+				C9384F1C1BD3FB7B00E1E3EB /* LocationService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -354,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				C9607B1B1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift */,
+				C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */,
 			);
 			name = "Use Cases";
 			sourceTree = "<group>";
@@ -760,6 +768,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9384F1D1BD3FB7B00E1E3EB /* LocationService.swift in Sources */,
 				C9607B2B1BD2B5CA003681EF /* WeatherState.swift in Sources */,
 				C9607B451BD2DE5F003681EF /* CityBuilder.swift in Sources */,
 				C9607B1C1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift in Sources */,
@@ -768,6 +777,7 @@
 				C9384EEE1BD32CDC00E1E3EB /* InteractorsFactory.swift in Sources */,
 				C9607B291BD2B535003681EF /* Location.swift in Sources */,
 				C9607B421BD2D523003681EF /* ModelBuilder.swift in Sources */,
+				C9384F201BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift in Sources */,
 				C9607B161BD2B1E9003681EF /* City.swift in Sources */,
 				C95B5DED1BD3242100654458 /* ForecastNetworkingProtocol.swift in Sources */,
 				C95B5DEB1BD323F500654458 /* NetworkingService.swift in Sources */,
@@ -786,6 +796,7 @@
 				C9607B2E1BD2D11A003681EF /* Location.swift in Sources */,
 				C9607B2F1BD2D11A003681EF /* City.swift in Sources */,
 				C9607B341BD2D18B003681EF /* FoundationDeclarations.swift in Sources */,
+				C9384F211BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift in Sources */,
 				C9607B4D1BD2E059003681EF /* CityBuilderTestCase.swift in Sources */,
 				C95B5DE71BD3224E00654458 /* WeatherStateBuilderTestCase.swift in Sources */,
 				C9384F1B1BD3FA9500E1E3EB /* ForecastNetworkingProtocol.swift in Sources */,
@@ -795,6 +806,7 @@
 				C95B5DE01BD3022B00654458 /* ForecastBuilder.swift in Sources */,
 				C9607B311BD2D11A003681EF /* WeatherState.swift in Sources */,
 				C9607B471BD2DE63003681EF /* ModelBuilder.swift in Sources */,
+				C9384F1E1BD3FB7B00E1E3EB /* LocationService.swift in Sources */,
 				C9607B301BD2D11A003681EF /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

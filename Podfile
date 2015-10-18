@@ -3,4 +3,4 @@ use_frameworks!
 
 pod 'SwiftyJSON'
 pod 'Just'
-
+pod 'SwiftyDispatch'
