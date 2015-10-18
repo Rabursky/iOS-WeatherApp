@@ -28,6 +28,7 @@ class ForecastPresenter : ForecastPresenterProtocol {
     }
     
     func updateForecast() -> () {
+        self.forecastView?.displayLoading()
         loadLocation()
     }
     
@@ -55,6 +56,7 @@ class ForecastPresenter : ForecastPresenterProtocol {
     }
     
     func didLoadForecast() {
-        print(self.getForecastForLocationInteractor.output?.city.name)
+        // we could potentialy use viewModel later
+        self.forecastView?.displayForecast(self.getForecastForLocationInteractor.output!)
     }
 }

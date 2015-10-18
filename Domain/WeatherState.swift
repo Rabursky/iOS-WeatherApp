@@ -6,18 +6,18 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
-typealias Temperature = Float
+public typealias Temperature = Float
 
 public struct WeatherState {
     let date: Date
-    let name: String
-    let description: String
-    let iconName: String
-    let currentTemperature: Temperature
-    let minTemperature: Temperature
-    let maxTemperature: Temperature
-    let pressure: Float
-    let humidity: Float
+    public let name: String
+    public let description: String
+    public let iconName: String
+    public let currentTemperature: Temperature
+    public let minTemperature: Temperature
+    public let maxTemperature: Temperature
+    public let pressure: Float
+    public let humidity: Float
 }
 
 extension WeatherState: Equatable {}

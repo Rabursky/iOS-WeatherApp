@@ -12,23 +12,51 @@ import Domain
 
 class ForecastViewController: UIViewController, ForecastViewProtocol {
     let presenter: ForecastPresenterProtocol = PresenterFactory.forecastPresenter()
+    
+    @IBOutlet weak var temperatureLabel: UILabel?
+    @IBOutlet weak var cityLabel: UILabel?
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
+    @IBOutlet weak var reloadForecastButton: UIButton?
+    
 
     override func viewDidAppear(animated: Bool) {
         self.presenter.setView(self)
         self.presenter.updateForecast()
     }
     
+    @IBAction func reloadForecast() {
+        self.presenter.updateForecast()
+    }
+    
+    func updateAsLoading(loading: Bool) {
+        if loading {
+            cityLabel?.text = "Loading..."
+            temperatureLabel?.text = ""
+            activityIndicator?.startAnimating()
+        }
+        activityIndicator?.hidden = !loading
+        reloadForecastButton?.hidden = loading
+    }
+    
     // MARK: ForecastViewProtocol
     
     func displayError(error: ErrorType) {
-        print(error)
+        updateAsLoading(false)
+        cityLabel?.text = "Some error occured!\n\n\(error._domain)"
+        temperatureLabel?.text = ""
     }
     
     func displayForecast(forecast: Forecast) {
-        
+        updateAsLoading(false)
+        cityLabel?.text = forecast.city.name
+        if let state: WeatherState = forecast.states.first {
+            temperatureLabel?.text = String(state.currentTemperature)
+        } else {
+            temperatureLabel?.text = "--"
+        }
     }
     
     func displayLoading() {
-        
+        updateAsLoading(true)
     }
 }

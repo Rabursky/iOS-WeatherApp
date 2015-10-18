@@ -16,7 +16,9 @@ class InteractorInvoker : InteractorInvokerProtocol {
         queue.addOperationWithBlock { () -> () in
             do {
                 try interactor.execute()
-                completionBlock?(error: nil)
+                Queue.main().async({ () -> Void in
+                    completionBlock?(error: nil)
+                })
             } catch let error {
                 Queue.main().async({ () -> Void in
                     completionBlock?(error: error)

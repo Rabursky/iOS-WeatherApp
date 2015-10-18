@@ -15,12 +15,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CleanWeather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4x-Bg-ZpL">
+                                <rect key="frame" x="216" y="52" width="169" height="35"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcc-mb-zib">
+                                <rect key="frame" x="256" y="107" width="89" height="96"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-s8-CI1">
+                                <rect key="frame" x="260" y="237" width="80" height="29"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" white="0.43957435344827589" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1yO-ow-ZtT">
+                                <rect key="frame" x="290" y="151" width="20" height="20"/>
+                                <animations/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoi-hr-xXN">
+                                <rect key="frame" x="277" y="520" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="reload"/>
+                                <connections>
+                                    <action selector="reloadForecast" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdO-uV-RiW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yoi-hr-xXN" secondAttribute="bottom" constant="50" id="Cp7-6T-ho4"/>
+                            <constraint firstItem="Z4x-Bg-ZpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nn9-Mf-kXW"/>
+                            <constraint firstItem="1yO-ow-ZtT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRg-38-4VF"/>
+                            <constraint firstItem="Zcc-mb-zib" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UJ0-AO-2e3"/>
+                            <constraint firstItem="2gF-s8-CI1" firstAttribute="top" secondItem="Z4x-Bg-ZpL" secondAttribute="bottom" constant="150" id="dFt-4S-GJU"/>
+                            <constraint firstItem="Zcc-mb-zib" firstAttribute="top" secondItem="Z4x-Bg-ZpL" secondAttribute="bottom" constant="20" id="msc-Og-K8q"/>
+                            <constraint firstItem="2gF-s8-CI1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sU9-Kh-EDv"/>
+                            <constraint firstItem="1yO-ow-ZtT" firstAttribute="top" secondItem="Z4x-Bg-ZpL" secondAttribute="bottom" constant="64" id="x5P-hX-gjL"/>
+                            <constraint firstItem="yoi-hr-xXN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yIx-mu-boU"/>
+                            <constraint firstItem="Z4x-Bg-ZpL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="zp9-Eh-UYV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="1yO-ow-ZtT" id="ni2-dj-osN"/>
+                        <outlet property="cityLabel" destination="2gF-s8-CI1" id="NvU-DD-rp0"/>
+                        <outlet property="reloadForecastButton" destination="yoi-hr-xXN" id="XzS-K9-1Ou"/>
+                        <outlet property="temperatureLabel" destination="Zcc-mb-zib" id="o8f-8h-36S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="235" y="409"/>
         </scene>
     </scenes>
 </document>
