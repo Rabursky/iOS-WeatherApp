@@ -41,7 +41,9 @@ class LocationService : NSObject, CLLocationManagerDelegate, LocationServiceProt
     
     private func determineLocation() throws -> Location {
         locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
-        locationManager.startUpdatingLocation()
+        Queue.main().after(0.01, block: { [weak self] () -> Void in
+            self?.locationManager.startUpdatingLocation()
+        }) 
         locationDeterminedSemaphore.wait()
         
         if let location = currentLocation {
@@ -63,5 +65,10 @@ class LocationService : NSObject, CLLocationManagerDelegate, LocationServiceProt
             manager.stopUpdatingLocation()
             locationDeterminedSemaphore.signal()
         }
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        currentLocation = nil
+        locationDeterminedSemaphore.signal()
     }
 }
