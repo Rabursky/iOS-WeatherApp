@@ -15,11 +15,7 @@
 		C9384EFE1BD3F71500E1E3EB /* Presenters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9384EF41BD3F71500E1E3EB /* Presenters.framework */; settings = {ASSET_TAGS = (); }; };
 		C9384F091BD3F71500E1E3EB /* Presenters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9384EF41BD3F71500E1E3EB /* Presenters.framework */; };
 		C9384F0A1BD3F71500E1E3EB /* Presenters.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9384EF41BD3F71500E1E3EB /* Presenters.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9384F121BD3F75200E1E3EB /* ForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B221BD2B371003681EF /* ForecastPresenter.swift */; settings = {ASSET_TAGS = (); }; };
-		C9384F131BD3F75300E1E3EB /* ForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B221BD2B371003681EF /* ForecastPresenter.swift */; settings = {ASSET_TAGS = (); }; };
-		C9384F141BD3F7E600E1E3EB /* ForecastPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B241BD2B386003681EF /* ForecastPresenterProtocol.swift */; settings = {ASSET_TAGS = (); }; };
 		C9384F151BD3F7E600E1E3EB /* ForecastViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B261BD2B459003681EF /* ForecastViewProtocol.swift */; settings = {ASSET_TAGS = (); }; };
-		C9384F161BD3F7E700E1E3EB /* ForecastPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B241BD2B386003681EF /* ForecastPresenterProtocol.swift */; settings = {ASSET_TAGS = (); }; };
 		C9384F171BD3F7E700E1E3EB /* ForecastViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9607B261BD2B459003681EF /* ForecastViewProtocol.swift */; settings = {ASSET_TAGS = (); }; };
 		C9384F191BD3F8B900E1E3EB /* PresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F181BD3F8B900E1E3EB /* PresenterFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		C9384F1A1BD3F8B900E1E3EB /* PresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F181BD3F8B900E1E3EB /* PresenterFactory.swift */; settings = {ASSET_TAGS = (); }; };
@@ -30,6 +26,8 @@
 		C9384F211BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */; settings = {ASSET_TAGS = (); }; };
 		C947D1DA1BD436DD007C8CB5 /* SwiftyDispatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C947D1D91BD436DD007C8CB5 /* SwiftyDispatch.framework */; };
 		C947D1DC1BD436E7007C8CB5 /* SwiftyDispatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C947D1DB1BD436E7007C8CB5 /* SwiftyDispatch.framework */; };
+		C947D2001BD44760007C8CB5 /* ForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D1FE1BD44760007C8CB5 /* ForecastPresenter.swift */; settings = {ASSET_TAGS = (); }; };
+		C947D2011BD44760007C8CB5 /* ForecastPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D1FF1BD44760007C8CB5 /* ForecastPresenterProtocol.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DDF1BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DE01BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DE41BD31E5A00654458 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */; };
@@ -162,6 +160,8 @@
 		C9384F1F1BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationInteractor.swift; sourceTree = "<group>"; };
 		C947D1D91BD436DD007C8CB5 /* SwiftyDispatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDispatch.framework; path = "Pods/../build/Debug-iphoneos/SwiftyDispatch.framework"; sourceTree = "<group>"; };
 		C947D1DB1BD436E7007C8CB5 /* SwiftyDispatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDispatch.framework; path = "Pods/../build/Debug-iphoneos/SwiftyDispatch.framework"; sourceTree = "<group>"; };
+		C947D1FE1BD44760007C8CB5 /* ForecastPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastPresenter.swift; sourceTree = "<group>"; };
+		C947D1FF1BD44760007C8CB5 /* ForecastPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastPresenterProtocol.swift; sourceTree = "<group>"; };
 		C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilder.swift; sourceTree = "<group>"; };
 		C95B5DE11BD3025700654458 /* ForecastBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilderTestCase.swift; sourceTree = "<group>"; };
 		C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
@@ -186,8 +186,6 @@
 		C9607B181BD2B22C003681EF /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		C9607B1B1BD2B2C2003681EF /* GetForecastForLocationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetForecastForLocationInteractor.swift; sourceTree = "<group>"; };
 		C9607B201BD2B322003681EF /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
-		C9607B221BD2B371003681EF /* ForecastPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastPresenter.swift; path = ../CleanWeather/ForecastPresenter.swift; sourceTree = "<group>"; };
-		C9607B241BD2B386003681EF /* ForecastPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastPresenterProtocol.swift; path = ../CleanWeather/ForecastPresenterProtocol.swift; sourceTree = "<group>"; };
 		C9607B261BD2B459003681EF /* ForecastViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastViewProtocol.swift; path = ../CleanWeather/ForecastViewProtocol.swift; sourceTree = "<group>"; };
 		C9607B281BD2B535003681EF /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C9607B2A1BD2B5CA003681EF /* WeatherState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherState.swift; sourceTree = "<group>"; };
@@ -294,8 +292,8 @@
 		C9384F111BD3F74800E1E3EB /* Forecast */ = {
 			isa = PBXGroup;
 			children = (
-				C9607B221BD2B371003681EF /* ForecastPresenter.swift */,
-				C9607B241BD2B386003681EF /* ForecastPresenterProtocol.swift */,
+				C947D1FE1BD44760007C8CB5 /* ForecastPresenter.swift */,
+				C947D1FF1BD44760007C8CB5 /* ForecastPresenterProtocol.swift */,
 				C9607B261BD2B459003681EF /* ForecastViewProtocol.swift */,
 			);
 			name = Forecast;
@@ -769,9 +767,9 @@
 			files = (
 				C9384F151BD3F7E600E1E3EB /* ForecastViewProtocol.swift in Sources */,
 				C9384F191BD3F8B900E1E3EB /* PresenterFactory.swift in Sources */,
-				C9384F121BD3F75200E1E3EB /* ForecastPresenter.swift in Sources */,
+				C947D2001BD44760007C8CB5 /* ForecastPresenter.swift in Sources */,
+				C947D2011BD44760007C8CB5 /* ForecastPresenterProtocol.swift in Sources */,
 				C9A4DE381BD40C46009712E6 /* InteractorInvokerProtocol.swift in Sources */,
-				C9384F141BD3F7E600E1E3EB /* ForecastPresenterProtocol.swift in Sources */,
 				C9A4DE351BD40C01009712E6 /* InteractorInvoker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -780,12 +778,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9384F161BD3F7E700E1E3EB /* ForecastPresenterProtocol.swift in Sources */,
 				C9384F1A1BD3F8B900E1E3EB /* PresenterFactory.swift in Sources */,
 				C9384F171BD3F7E700E1E3EB /* ForecastViewProtocol.swift in Sources */,
 				C9A4DE3C1BD41342009712E6 /* InteractorInvokerTestCase.swift in Sources */,
 				C9A4DE391BD40C46009712E6 /* InteractorInvokerProtocol.swift in Sources */,
-				C9384F131BD3F75300E1E3EB /* ForecastPresenter.swift in Sources */,
 				C9A4DE361BD40C01009712E6 /* InteractorInvoker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
