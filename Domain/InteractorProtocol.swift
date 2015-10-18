@@ -6,6 +6,10 @@
 //  Copyright © 2015 Marcin Rabursky. All rights reserved.
 //
 
+enum InteractorError : ErrorType {
+    case InputDataMissing
+}
+
 public protocol InteractorProtocol {
     func execute() throws
 }
