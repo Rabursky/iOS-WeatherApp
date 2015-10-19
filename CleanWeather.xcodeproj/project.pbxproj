@@ -28,6 +28,10 @@
 		C947D1DC1BD436E7007C8CB5 /* SwiftyDispatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C947D1DB1BD436E7007C8CB5 /* SwiftyDispatch.framework */; };
 		C947D2001BD44760007C8CB5 /* ForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D1FE1BD44760007C8CB5 /* ForecastPresenter.swift */; settings = {ASSET_TAGS = (); }; };
 		C947D2011BD44760007C8CB5 /* ForecastPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D1FF1BD44760007C8CB5 /* ForecastPresenterProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		C947D2041BD504DE007C8CB5 /* GetForecastForLocationInteractorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D2031BD504DE007C8CB5 /* GetForecastForLocationInteractorTestCase.swift */; settings = {ASSET_TAGS = (); }; };
+		C947D2061BD504F1007C8CB5 /* GetCurrentLocationInteractorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D2051BD504F1007C8CB5 /* GetCurrentLocationInteractorTestCase.swift */; settings = {ASSET_TAGS = (); }; };
+		C947D2071BD508AC007C8CB5 /* ForecastPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D1FF1BD44760007C8CB5 /* ForecastPresenterProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		C947D2081BD508B7007C8CB5 /* ForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D1FE1BD44760007C8CB5 /* ForecastPresenter.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DDF1BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DE01BD3022B00654458 /* ForecastBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		C95B5DE41BD31E5A00654458 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */; };
@@ -162,6 +166,8 @@
 		C947D1DB1BD436E7007C8CB5 /* SwiftyDispatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDispatch.framework; path = "Pods/../build/Debug-iphoneos/SwiftyDispatch.framework"; sourceTree = "<group>"; };
 		C947D1FE1BD44760007C8CB5 /* ForecastPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastPresenter.swift; sourceTree = "<group>"; };
 		C947D1FF1BD44760007C8CB5 /* ForecastPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastPresenterProtocol.swift; sourceTree = "<group>"; };
+		C947D2031BD504DE007C8CB5 /* GetForecastForLocationInteractorTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetForecastForLocationInteractorTestCase.swift; sourceTree = "<group>"; };
+		C947D2051BD504F1007C8CB5 /* GetCurrentLocationInteractorTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationInteractorTestCase.swift; sourceTree = "<group>"; };
 		C95B5DDE1BD3022B00654458 /* ForecastBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilder.swift; sourceTree = "<group>"; };
 		C95B5DE11BD3025700654458 /* ForecastBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastBuilderTestCase.swift; sourceTree = "<group>"; };
 		C95B5DE31BD31E5A00654458 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
@@ -299,6 +305,15 @@
 			name = Forecast;
 			sourceTree = "<group>";
 		};
+		C947D2021BD44E2B007C8CB5 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				C947D2031BD504DE007C8CB5 /* GetForecastForLocationInteractorTestCase.swift */,
+				C947D2051BD504F1007C8CB5 /* GetCurrentLocationInteractorTestCase.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
 		C95B5DE91BD323D100654458 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +391,7 @@
 				C9607B041BD2AE5B003681EF /* DomainTests.swift */,
 				C9607B061BD2AE5B003681EF /* Info.plist */,
 				C9607B4B1BD2DE99003681EF /* Builders */,
+				C947D2021BD44E2B007C8CB5 /* Interactors */,
 			);
 			path = DomainTests;
 			sourceTree = "<group>";
@@ -779,8 +795,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9384F1A1BD3F8B900E1E3EB /* PresenterFactory.swift in Sources */,
+				C947D2081BD508B7007C8CB5 /* ForecastPresenter.swift in Sources */,
 				C9384F171BD3F7E700E1E3EB /* ForecastViewProtocol.swift in Sources */,
 				C9A4DE3C1BD41342009712E6 /* InteractorInvokerTestCase.swift in Sources */,
+				C947D2071BD508AC007C8CB5 /* ForecastPresenterProtocol.swift in Sources */,
 				C9A4DE391BD40C46009712E6 /* InteractorInvokerProtocol.swift in Sources */,
 				C9A4DE361BD40C01009712E6 /* InteractorInvoker.swift in Sources */,
 			);
@@ -830,6 +848,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C947D2061BD504F1007C8CB5 /* GetCurrentLocationInteractorTestCase.swift in Sources */,
 				C9384EEB1BD3285E00E1E3EB /* NetworkingService.swift in Sources */,
 				C9607B481BD2DE63003681EF /* CityBuilder.swift in Sources */,
 				C9607B051BD2AE5B003681EF /* DomainTests.swift in Sources */,
@@ -838,6 +857,7 @@
 				C9607B341BD2D18B003681EF /* FoundationDeclarations.swift in Sources */,
 				C9384F211BD3FD3C00E1E3EB /* GetCurrentLocationInteractor.swift in Sources */,
 				C9607B4D1BD2E059003681EF /* CityBuilderTestCase.swift in Sources */,
+				C947D2041BD504DE007C8CB5 /* GetForecastForLocationInteractorTestCase.swift in Sources */,
 				C95B5DE71BD3224E00654458 /* WeatherStateBuilderTestCase.swift in Sources */,
 				C9384F1B1BD3FA9500E1E3EB /* ForecastNetworkingProtocol.swift in Sources */,
 				C9607B501BD2EC6E003681EF /* WeatherStateBuilder.swift in Sources */,
