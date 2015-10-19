@@ -8,6 +8,10 @@
 
 import Domain
 
+enum ForecastPresenterError : ErrorType {
+    case ForcastMissingError
+}
+
 class ForecastPresenter : ForecastPresenterProtocol {
     let interactorInvoker: InteractorInvokerProtocol
     let getCurrentLocationInteractor: GetCurrentLocationInteractor
@@ -29,34 +33,18 @@ class ForecastPresenter : ForecastPresenterProtocol {
     
     func updateForecast() -> () {
         self.forecastView?.displayLoading()
-        loadLocation()
-    }
-    
-    // MARK: Private
-    
-    func loadLocation() {
-        self.interactorInvoker.invoke(self.getCurrentLocationInteractor) { [weak self] (error) -> () in
+        self.interactorInvoker.invoke({ () throws -> () in
+            try self.getCurrentLocationInteractor.execute()
+            self.getForecastForLocationInteractor.input = self.getCurrentLocationInteractor.output
+            try self.getForecastForLocationInteractor.execute()
+        }) { [weak self] (error) -> () in
             if let error = error {
                 self?.forecastView?.displayError(error)
+            } else if let forecast = self?.getForecastForLocationInteractor.output {
+                self?.forecastView?.displayForecast(forecast)
             } else {
-                self?.loadForecast()
+                self?.forecastView?.displayError(ForecastPresenterError.ForcastMissingError)
             }
         }
-    }
-    
-    func loadForecast() {
-        self.getForecastForLocationInteractor.input = self.getCurrentLocationInteractor.output
-        self.interactorInvoker.invoke(self.getForecastForLocationInteractor) { [weak self] (error) -> () in
-            if let error = error {
-                self?.forecastView?.displayError(error)
-            } else {
-                self?.didLoadForecast()
-            }
-        }
-    }
-    
-    func didLoadForecast() {
-        // we could potentialy use viewModel later
-        self.forecastView?.displayForecast(self.getForecastForLocationInteractor.output!)
     }
 }

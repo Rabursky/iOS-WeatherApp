@@ -9,7 +9,9 @@
 import Domain
 
 typealias InteractorInvokerCompletionBlock = (error: ErrorType?) -> ()
+typealias InteractorInvokerCallBlock = () throws -> ()
 
 protocol InteractorInvokerProtocol {
     func invoke(interactor: InteractorProtocol, completionBlock: InteractorInvokerCompletionBlock?) -> ()
+    func invoke(callBlock: InteractorInvokerCallBlock, completionBlock: InteractorInvokerCompletionBlock?) -> ()
 }
