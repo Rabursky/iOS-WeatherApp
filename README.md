@@ -2,13 +2,7 @@
 
 ### Purpose
 
-Basic implementation of Clean Architecture on iOS in a very straightforward Weather app.
-
-None of the extra points have been implemented yet. Code have pretty good test coverage though.
-
-### Details
-
-Total time: ~7h
+Basic implementation of Clean Architecture on iOS in a very straightforward Weather app. This project ought to demonstrate real life usage of SOLID Principles on iOS.
 
 Libraries used:
 
