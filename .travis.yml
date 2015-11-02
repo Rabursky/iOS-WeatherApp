@@ -7,4 +7,6 @@ branches:
 xcode_workspace: CleanWeather.xcworkspace
 xcode_scheme: CleanWeather
 osx_image: xcode7.1
-xcode_sdk: iphonesimulator9.2
+xcode_sdk: iphonesimulator
+
+xcodebuild -workspace CleanWeather.xcworkspace -scheme CleanWeather -sdk iphonesimulator build test
