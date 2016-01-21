@@ -20,6 +20,7 @@ class ForecastViewController: UIViewController, ForecastViewProtocol {
     
 
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         self.presenter.setView(self)
         self.presenter.updateForecast()
     }
