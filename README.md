@@ -1,6 +1,6 @@
 # CleanWeather
 
-[![Build Status](https://travis-ci.org/Rabursky/iOS-WeatherApp.svg?branch=master)](https://travis-ci.org/Rabursky/iOS-WeatherApp)
+[![Build Status](https://travis-ci.org/Rabursky/iOS-WeatherApp.svg?branch=master)](https://travis-ci.org/Rabursky/iOS-WeatherApp) [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5721e9560de0ae0100697e13&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5721e9560de0ae0100697e13/build/latest)
 
 ### Purpose
 
