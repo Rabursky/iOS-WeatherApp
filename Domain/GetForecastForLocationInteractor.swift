@@ -18,7 +18,7 @@ public class GetForecastForLocationInteractor : InteractorProtocol {
     }
     
     public func execute() throws -> () {
-        if let location = input {
+        if let location = self.input {
             let json = try networkingService.getForecastJSONWithLocation(location)
             output =  builder.buildInstanceWithJSON(json)
         } else {

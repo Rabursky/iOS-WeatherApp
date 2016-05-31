@@ -31,12 +31,12 @@ class ForecastViewController: UIViewController, ForecastViewProtocol {
     
     func updateAsLoading(loading: Bool) {
         if loading {
-            cityLabel?.text = "Loading..."
-            temperatureLabel?.text = ""
-            activityIndicator?.startAnimating()
+            self.cityLabel?.text = "Loading..."
+            self.temperatureLabel?.text = ""
+            self.activityIndicator?.startAnimating()
         }
-        activityIndicator?.hidden = !loading
-        reloadForecastButton?.hidden = loading
+        self.activityIndicator?.hidden = !loading
+        self.reloadForecastButton?.hidden = loading
     }
     
     // MARK: ForecastViewProtocol
